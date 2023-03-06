@@ -1,0 +1,14 @@
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString(callSuper = true, includeFieldNames = true)
+
+public @Data class Motore extends Camion{
+    private int numCilindri;
+    private int cavalli;
+
+}
