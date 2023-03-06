@@ -1,0 +1,15 @@
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString(callSuper = true, includeFieldNames = true)
+
+public @Data class Persona {
+    private String nome;
+    private String cognome;
+    private String residenza;
+
+}
