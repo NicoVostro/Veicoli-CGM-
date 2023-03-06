@@ -1,0 +1,14 @@
+public class Main {
+    public static void main(String[] args) {
+        Persona prs1 = new Persona("Nicola", "Zavoianni", "Capurso" );
+        Veicolo vcl1 = new Veicolo("FIAT", prs1);
+        Camion cmn1 = new Motore();
+        cmn1.setCasaAutoProd(vcl1.getCasaAutoProd());
+        cmn1.setProprietario(vcl1.getProprietario());
+        cmn1.setCaricoProprio(3.5);
+        cmn1.setCaricoRimorchio(2);
+        cmn1.setMot(new Motore(4, 38));
+        System.out.println(cmn1.toString());
+
+    }
+}
