@@ -1,0 +1,14 @@
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString(callSuper = true, includeFieldNames = true)
+
+public @Data class Camion extends Veicolo{
+    private double caricoProprio;
+    private double caricoRimorchio;
+    private Motore mot;
+
+}
